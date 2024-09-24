@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on: 
   push:
-   branches: [ "main" ]
+    branches: [ "main" ]
   pull_request:
-   branches: [ "main" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -19,5 +19,5 @@ steps:
    java-version: '22'
    distribution: 'temurin'
    cache: maven
-   - name: Build with Maven
-     run: mvn -B test
+- name: Build with Maven
+  run: mvn -B test
